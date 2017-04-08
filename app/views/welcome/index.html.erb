@@ -1,0 +1,97 @@
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">afrolang</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h1>Our app is available on any mobile device! Download now to get started!</h1>
+                            <%= link_to image_tag("google-play-badge.svg", :class => "badge-link"),"https://play.google.com/store/apps/details?id=com.oyinloyeayodeji.www.miwok&hl=en" %>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                   
+                                    <%= image_tag("demo-screen-1.jpg" , :class => "img-responsive") %>
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cta">
+        <div class="cta-content">
+            <div class="container">
+                <h2>Stop waiting.<br>Start Learning.</h2>
+                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+    <section id="contact" class="contact bg-primary">
+        <div class="container">
+            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+            <ul class="list-inline list-social">
+                <li class="social-twitter">
+                    <%= link_to(raw("" +("<i class= 'fa fa-twitter'></i>")),"https://twitter.com/afrolang", target: "_blank") %>
+                </li>
+                <li class="social-facebook">
+                	<%= link_to(raw("" +("<i class= 'fa fa-facebook'></i>")), "https://www.facebook.com/afrolang", target: "_blank") %>
+                </li>
+                <li class="social-google-plus">
+                	<%= link_to(raw("" +("<i class= 'fa fa-instagram'></i>")), "https://www.instagram.com/afrolang",target: "_blank") %>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2017 Turdla Technologies. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
